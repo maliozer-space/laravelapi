@@ -1,10 +1,10 @@
 # laravelapi
 Laravel Api Service on Google Cloud
 
-/posts
-/posts/{id}
-/person
-/person/{id}
+/posts__
+/posts/{id}__
+/person__
+/person/{id}__
 
 
 http://mobilebackend-248419.appspot.com/api/posts
