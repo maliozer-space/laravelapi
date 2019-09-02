@@ -1,0 +1,25 @@
+runtime: php72
+
+handlers:
+
+  - url: /css
+    static_dir: public/css
+  
+  - url: /js
+    static_dir: public/js
+
+env_variables:
+  ## Put production environment variables here.
+  APP_KEY: base64:6gP9oUPu0FscegyYa/8dUeGB2ivX4K6+PsjsRkYDqmA=
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+  
+  DB_SOCKET: "/cloudsql/mobilebackend-248419:us-central1:mobilesql"
+  
+  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+  # values obtained when configuring your Cloud SQL instance.
+  #MYSQL_DSN: mysql:unix_socket=/cloudsql/mobilebackend-248419:us-central1:mobilesql;dbname=laravel
+
+beta_settings:
+  cloud_sql_instances: "mobilebackend-248419:us-central1:mobilesql"
